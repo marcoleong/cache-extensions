@@ -120,7 +120,7 @@ setup_libraries() {
       echo "::group::Logs to set up required libraries"
       sudo DEBIAN_FRONTEND=noninteractive apt-fast install --no-install-recommends --no-upgrade -y "${libraries_array[@]}" || (sudo DEBIAN_FRONTEND=noninteractive apt-get update && sudo DEBIAN_FRONTEND=noninteractive apt-fast install --no-install-recommends --no-upgrade -y "${libraries_array[@]}")
       ec="$?"
-      [[ "$libraries" = *libgd* ]] && add_ppa_package libgd3
+      #[[ "$libraries" = *libgd* ]] && add_ppa_package libgd3
       echo "::endgroup::"
       if [ "$ec" -eq "0" ]; then mark="${tick:?}"; else mark="${cross:?}"; fi
       add_log "$mark" "${libraries_array[@]//\[0-9]*$/}"

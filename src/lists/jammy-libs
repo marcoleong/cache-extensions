@@ -35,7 +35,6 @@ libavahi-client3
 libavahi-common-data
 libavahi-common3
 libavahi-glib1
-libavif13
 libbinutils
 libblas-dev
 libblas3
@@ -245,7 +244,6 @@ libicu70
 libidn2-0
 libilmbase-dev
 libilmbase25
-libimagequant0
 libinih1
 libintl-perl
 libintl-xs-perl
@@ -590,7 +588,6 @@ libqmi-glib5
 libqmi-proxy
 libquadmath0
 librabbitmq4
-libraqm0
 libre2-9
 libreadline-dev
 libreadline8
